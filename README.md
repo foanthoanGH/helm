@@ -15,5 +15,7 @@ To uninstall:
 
 helm uninstall monitoring ./kube-prometheus-stack/ --kube-context microk8s
 
+helm upgrade monitoring --values=myvalues.yaml .
+
 
 
