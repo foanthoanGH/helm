@@ -1,0 +1,19 @@
+apiVersion: v2
+appVersion: 4.5.2
+description: Istio Gateway
+home: https://gluu.org/docs/gluu-server/
+icon: https://gluu.org/docs/gluu-server/favicon.ico
+keywords:
+- istio
+- gateway
+kubeVersion: '>=v1.21.0-0'
+maintainers:
+- email: support@gluu.org
+  name: Mohammad Abudayyeh
+  url: https://github.com/moabu
+name: gluu-istio-ingress
+sources:
+- https://gluu.org/docs/gluu-server/
+- https://github.com/GluuFederation/cloud-native-edition/tree/4.3/pygluu/kubernetes/templates/helm/gluu/charts/gluu-istio-ingress
+type: application
+version: 1.8.23

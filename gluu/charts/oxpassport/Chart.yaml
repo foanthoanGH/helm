@@ -1,0 +1,20 @@
+apiVersion: v2
+appVersion: 4.5.2
+description: Gluu interface to Passport.js to support social login and inbound identity.
+home: https://gluu.org/docs/gluu-server
+icon: https://gluu.org/docs/gluu-server/favicon.ico
+keywords:
+- Passport.js
+- Inbound Identity
+- Social login
+kubeVersion: '>=v1.21.0-0'
+maintainers:
+- email: support@gluu.org
+  name: Mohammad Abudayyeh
+  url: https://github.com/moabu
+name: oxpassport
+sources:
+- https://github.com/GluuFederation/docker-oxpassport
+- https://github.com/GluuFederation/cloud-native-edition/tree/4.4/pygluu/kubernetes/templates/helm/gluu/charts/oxpassport
+type: application
+version: 1.8.23

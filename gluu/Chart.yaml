@@ -1,0 +1,117 @@
+annotations:
+  artifacthub.io/changes: |
+    - Gluu 4.5.1 official chart release
+    - Add support for passing tolerations
+  artifacthub.io/images: |
+    - name: casa
+      image: gluufederation/casa:4.5.1_dev
+    - name: fido2
+      image: gluufederation/fido2:4.5.1_dev
+    - name: scim
+      image: gluufederation/scim:4.5.1_dev
+    - name: configuration-manager
+      image: gluufederation/config-init:4.5.1_dev
+    - name: cr-rotate
+      image: gluufederation/cr-rotate:4.5.1_dev
+    - name: certmanager
+      image: gluufederation/certmanager:4.5.1_dev
+    - name: opendj
+      image: gluufederation/opendj:4.5.1_dev
+    - name: jackrabbit
+      image: gluufederation/jackrabbit:4.5.1_dev
+    - name: oxauth
+      image: gluufederation/oxauth:4.5.1_dev
+    - name: oxd-server
+      image: gluufederation/oxd-server:4.5.1_dev
+    - name: oxpassport
+      image: gluufederation/oxpassport:4.5.1_dev
+    - name: oxshibboleth
+      image: gluufederation/oxshibboleth:4.5.1_dev
+    - name: persistence
+      image: gluufederation/persistence:4.5.1_dev
+    - name: oxtrust
+      image: gluufederation/oxtrust:4.5.1_dev
+  artifacthub.io/license: Apache-2.0
+apiVersion: v2
+appVersion: 4.5.1
+dependencies:
+- condition: global.config.enabled
+  name: config
+  repository: ""
+  version: 1.8.23
+- condition: global.opendj.enabled
+  name: opendj
+  repository: ""
+  version: 1.8.23
+- condition: global.jackrabbit.enabled
+  name: jackrabbit
+  repository: ""
+  version: 1.8.23
+- condition: global.oxauth.enabled
+  name: oxauth
+  repository: ""
+  version: 1.8.23
+- condition: global.fido2.enabled
+  name: fido2
+  repository: ""
+  version: 1.8.23
+- condition: global.scim.enabled
+  name: scim
+  repository: ""
+  version: 1.8.23
+- condition: global.oxtrust.enabled
+  name: oxtrust
+  repository: ""
+  version: 1.8.23
+- condition: global.nginx-ingress.enabled
+  name: nginx-ingress
+  repository: ""
+  version: 1.8.23
+- condition: global.oxshibboleth.enabled
+  name: oxshibboleth
+  repository: ""
+  version: 1.8.23
+- condition: config.configmap.gluuPassportEnabled
+  name: oxpassport
+  repository: ""
+  version: 1.8.23
+- condition: config.configmap.gluuCasaEnabled
+  name: casa
+  repository: ""
+  version: 1.8.23
+- condition: global.oxauth-key-rotation.enabled
+  name: oxauth-key-rotation
+  repository: ""
+  version: 1.8.23
+- condition: global.cr-rotate.enabled
+  name: cr-rotate
+  repository: ""
+  version: 1.8.23
+- condition: global.oxd-server.enabled
+  name: oxd-server
+  repository: ""
+  version: 1.8.23
+- condition: global.persistence.enabled
+  name: persistence
+  repository: ""
+  version: 1.8.23
+- condition: global.istio.ingress
+  name: gluu-istio-ingress
+  repository: ""
+  version: 1.8.23
+- condition: global.alb.ingress
+  name: gluu-alb-ingress
+  repository: ""
+  version: 1.8.23
+description: Gluu Access and Identity Mangement
+home: https://www.gluu.org
+icon: https://gluu.org/docs/gluu-server/favicon.ico
+kubeVersion: '>=v1.21.0-0'
+maintainers:
+- email: support@gluu.org
+  name: moabu
+name: gluu
+sources:
+- https://gluu.org/docs/gluu-server
+- https://github.com/GluuFederation/cloud-native-edition
+version: 1.8.23

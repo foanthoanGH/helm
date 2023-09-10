@@ -1,0 +1,19 @@
+apiVersion: v2
+appVersion: 4.5.2
+description: Gluu Admin UI. This shouldn't be internet facing.
+home: https://gluu.org/docs/gluu-server
+icon: https://gluu.org/docs/gluu-server/favicon.ico
+keywords:
+- GUI
+- Admin
+kubeVersion: '>=v1.21.0-0'
+maintainers:
+- email: support@gluu.org
+  name: Mohammad Abudayyeh
+  url: https://github.com/moabu
+name: oxtrust
+sources:
+- https://github.com/GluuFederation/docker-oxtrust
+- https://github.com/GluuFederation/cloud-native-edition/tree/4.3/pygluu/kubernetes/templates/helm/gluu/charts/oxtrust
+type: application
+version: 1.8.23

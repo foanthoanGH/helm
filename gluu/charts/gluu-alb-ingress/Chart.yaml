@@ -1,0 +1,20 @@
+apiVersion: v2
+appVersion: 4.5.2
+description: Nginx ingress definitions chart
+home: https://gluu.org/docs/gluu-server
+icon: https://gluu.org/docs/gluu-server/favicon.ico
+keywords:
+- application load balancer
+- ingress
+kubeVersion: '>=v1.21.0-0'
+maintainers:
+- email: support@gluu.org
+  name: Mohammad Abudayyeh
+  url: https://github.com/moabu
+name: gluu-alb-ingress
+sources:
+- https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
+- https://kubernetes.io/docs/concepts/services-networking/ingress/
+- https://github.com/GluuFederation/cloud-native-edition/tree/4.3/pygluu/kubernetes/templates/helm/gluu/charts/alb
+type: application
+version: 1.8.23
