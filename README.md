@@ -11,6 +11,12 @@ microk8s config view > /home/ubuntu/.kube/config
 # Installation
 helm install monitoring ./kube-prometheus-stack/ --kube-context microk8s
 
+go to the directory where you have the chart:
+
+helm install <name> ./<chart name>
+
+helm install mysql ./mysql ====ns will be mysql
+
 # Uninstallation
 helm uninstall monitoring ./kube-prometheus-stack/ --kube-context microk8s
 
