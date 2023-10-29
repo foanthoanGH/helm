@@ -8,6 +8,11 @@ sudo mkdir /home/ubuntu/.kube
 sudo chown ubuntu /home/ubuntu/.kube
 microk8s config view > /home/ubuntu/.kube/config
 
+#user one line:
+sudo mkdir -p /home/ubuntu/.kube && sudo microk8s config view > /home/ubuntu/.kube/config && sudo chown -R ubuntu:ubuntu /home/ubuntu/.kube
+
+
+
 # Installation
 helm install monitoring ./kube-prometheus-stack/ --kube-context microk8s
 
