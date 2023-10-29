@@ -2,6 +2,9 @@ This is local repo for helm chart binary installation.
 
 
 make helm user microk8s context
+
+export KUBECONFIG=/var/snap/microk8s/current/credentials/kubelet.config
+
 -
 # Configuration
 sudo mkdir /home/ubuntu/.kube
