@@ -3,6 +3,8 @@ This is local repo for helm chart binary installation.
 
 make helm user microk8s context
 
+#Setting the KUBECONFIG environment variable is necessary for using Kubernetes tools such as kubectl and helm. If the KUBECONFIG environment variable is not set, these tools will not be able to connect to the Kubernetes cluster.
+
 export KUBECONFIG=/var/snap/microk8s/current/credentials/kubelet.config
 
 -
